@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 158.90118 89.731544"
+   height="89.731544mm"
+   width="158.90118mm">
+  <defs
+     id="defs2" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-22.225001,-21.001784)"
+     id="layer1">
+    <rect
+       y="21.266367"
+       x="22.489584"
+       height="89.202377"
+       width="158.37202"
+       id="rect10"
+       style="fill:none;stroke:#000000;stroke-width:0.5291667;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       id="text819"
+       y="27.384548"
+       x="78.515205"
+       style="font-size:5.70129967px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.14253248"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.14253248"
+         y="27.384548"
+         x="78.515205"
+         id="tspan817">OS (Hypervisor)</tspan></text>
+    <rect
+       y="32.635174"
+       x="31.77952"
+       height="74.517906"
+       width="61.92905"
+       id="rect836"
+       style="fill:none;fill-opacity:0.54509804;stroke:#fdcb6e;stroke-width:0.85279351;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       id="text840"
+       y="38.653275"
+       x="54.239582"
+       style="font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-size:6.3499999px;stroke-width:0.26458332"
+         y="38.653275"
+         x="54.239582"
+         id="tspan838">LXCs</tspan></text>
+    <flowRoot
+       transform="scale(0.26458333)"
+       style="font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px"
+       id="flowRoot842"
+       xml:space="preserve"><flowRegion
+         id="flowRegion844"><rect
+           y="183.23396"
+           x="123.57143"
+           height="214.28569"
+           width="217.14287"
+           id="rect846" /></flowRegion><flowPara
+         id="flowPara848"></flowPara></flowRoot>    <rect
+       y="42.66996"
+       x="42.759243"
+       height="17.919603"
+       width="36.866268"
+       id="rect836-6"
+       style="fill:#fdcb6e;fill-opacity:0.54509804;stroke:#fdcb6e;stroke-width:0.32265997;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       id="text867"
+       y="47.913692"
+       x="48.002972"
+       style="font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-size:4.23333311px;stroke-width:0.26458332"
+         y="47.913692"
+         x="48.002972"
+         id="tspan865">LXC1 (heavy)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.26458332"
+       x="49.892853"
+       y="54.717262"
+       id="text881"><tspan
+         id="tspan879"
+         x="49.892853"
+         y="54.717262"
+         style="font-size:4.23333311px;stroke-width:0.26458332">Server like</tspan></text>
+    <rect
+       style="fill:#fdcb6e;fill-opacity:0.54509804;stroke:#fdcb6e;stroke-width:0.32265997;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect883"
+       width="36.866268"
+       height="17.919603"
+       x="42.759243"
+       y="65.159546" />
+    <text
+       xml:space="preserve"
+       style="font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.26458332"
+       x="45.35714"
+       y="70.403275"
+       id="text887"><tspan
+         id="tspan885"
+         x="45.35714"
+         y="70.403275"
+         style="font-size:4.23333311px;stroke-width:0.26458332">LXC2 (medium)</tspan></text>
+    <text
+       id="text891"
+       y="76.91011"
+       x="45.382885"
+       style="font-size:9.60692596px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.24017315"
+       xml:space="preserve"><tspan
+         style="font-size:3.84277034px;stroke-width:0.24017315"
+         y="76.91011"
+         x="45.382885"
+         id="tspan889">Shared web apps</tspan></text>
+    <rect
+       y="87.425873"
+       x="42.759243"
+       height="17.919603"
+       width="36.866268"
+       id="rect893"
+       style="fill:#fdcb6e;fill-opacity:0.54509804;stroke:#fdcb6e;stroke-width:0.32265997;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       id="text897"
+       y="92.669601"
+       x="49.32589"
+       style="font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-size:4.23333311px;stroke-width:0.26458332"
+         y="92.669601"
+         x="49.32589"
+         id="tspan895">LXC3 (light)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:9.60692596px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.24017315"
+       x="48.784672"
+       y="99.176437"
+       id="text901"><tspan
+         id="tspan907"
+         x="48.784672"
+         y="99.176437"
+         style="font-size:3.84277034px;stroke-width:0.24017315">web services</tspan></text>
+    <text
+       id="text915"
+       y="103.14519"
+       x="48.784672"
+       style="font-size:9.60692596px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.24017315"
+       xml:space="preserve"><tspan
+         style="font-size:3.84277034px;stroke-width:0.24017315"
+         y="103.14519"
+         x="48.784672"
+         id="tspan913">(monitoring)</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#0984e3;stroke-width:0.85279351;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect955"
+       width="61.92905"
+       height="74.517906"
+       x="107.18577"
+       y="32.635174" />
+    <text
+       xml:space="preserve"
+       style="font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.26458332"
+       x="129.64583"
+       y="38.653275"
+       id="text959"><tspan
+         id="tspan957"
+         x="129.64583"
+         y="38.653275"
+         style="font-size:6.3499999px;stroke-width:0.26458332">KVMs</tspan></text>
+    <rect
+       style="fill:#0984e3;fill-opacity:0.54509804;stroke:#0984e3;stroke-width:0.32265997;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect961"
+       width="36.866268"
+       height="17.919603"
+       x="118.1655"
+       y="42.66996" />
+    <text
+       xml:space="preserve"
+       style="font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.26458332"
+       x="126.09674"
+       y="47.913692"
+       id="text965"><tspan
+         id="tspan963"
+         x="126.09674"
+         y="47.913692"
+         style="font-size:4.23333311px;stroke-width:0.26458332">OS ubuntu</tspan></text>
+    <text
+       id="text969"
+       y="52.925591"
+       x="122.6116"
+       style="font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-size:4.23333311px;stroke-width:0.26458332"
+         y="52.925591"
+         x="122.6116"
+         id="tspan967">bigA main OS</tspan></text>
+    <rect
+       y="65.159546"
+       x="118.1655"
+       height="17.919603"
+       width="36.866268"
+       id="rect971"
+       style="fill:#0984e3;fill-opacity:0.54509804;stroke:#0984e3;stroke-width:0.32265997;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       id="text975"
+       y="70.403275"
+       x="125.8398"
+       style="font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-size:4.23333311px;stroke-width:0.26458332"
+         y="70.403275"
+         x="125.8398"
+         id="tspan973">OS ubuntu</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:9.60692596px;line-height:0.30000001;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;stroke-width:0.24017315"
+       x="122.32146"
+       y="76.760803"
+       id="text979"><tspan
+         id="tspan977"
+         x="122.32146"
+         y="76.760803"
+         style="font-size:3.84277034px;line-height:0.30000001;text-align:start;text-anchor:start;stroke-width:0.24017315">Deploying apps</tspan><tspan
+         id="tspan1001"
+         x="122.32146"
+         y="80.275589"
+         style="font-size:3.84277034px;line-height:0.30000001;text-align:start;text-anchor:start;stroke-width:0.24017315"> for Biologists</tspan></text>
+    <rect
+       style="fill:#0984e3;fill-opacity:0.54509804;stroke:#0984e3;stroke-width:0.32265997;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect981"
+       width="36.866268"
+       height="17.919603"
+       x="118.1655"
+       y="87.425873" />
+    <text
+       xml:space="preserve"
+       style="font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.26458332"
+       x="124.73214"
+       y="92.669601"
+       id="text985"><tspan
+         id="tspan983"
+         x="124.73214"
+         y="92.669601"
+         style="font-size:4.23333311px;stroke-width:0.26458332">OS Windows</tspan></text>
+    <text
+       id="text989"
+       y="99.475052"
+       x="118.368"
+       style="font-size:9.60692596px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.24017315"
+       xml:space="preserve"><tspan
+         style="font-size:3.84277034px;stroke-width:0.24017315"
+         y="99.475052"
+         x="118.368"
+         id="tspan987">windows only apps</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8.07145786px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.20178643"
+       x="122.39934"
+       y="56.790707"
+       id="text997"><tspan
+         id="tspan995"
+         x="122.39934"
+         y="56.790707"
+         style="font-size:3.22858286px;stroke-width:0.20178643">(Genome browser)</tspan></text>
+  </g>
+</svg>

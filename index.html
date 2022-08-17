@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>index.knit</title>
+    <meta charset="utf-8" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/metropolis-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+    <link rel="stylesheet" href="bootstrap.min.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+
+class: center, middle
+background-image: url(imgs/LOGO-bigA-3101.jpg),url(imgs/cbi.png),url(imgs/logo_UT3_RVB.png)
+background-position: 100% 0%,25% 100%,75% 100%
+background-size: 28%,15%,20%
+
+## .center[__Group Meeting bigA__]
+
+### .center[__Virtualization manager__ to deploy services on __bigA__]
+
+&lt;hr /&gt;
+
+.large[Vincent ROCHER | bigA | 17/08/2022]
+
+
+---
+
+## __Hypervisors__ to manage virtual machines
+
+&lt;img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/25/Proxmox-VE-logo.svg/1920px-Proxmox-VE-logo.svg.png" width="400" height="100" /&gt;
+
+* OS Debian-based Linux distribution.
+* Can run _LXC_ containers and full virtualization with _KVM_.
+* No GUI. CLI and Web Interface for managing VMs.
+* Hability to merge multiples ressources (computers) into clusters (not tested, didn't get it, kubernetes ?).
+* Device/PCI passthrough (advanced).
+* Offer ZFS storage solution.
+
+
+&lt;img src="https://www.truenas.com/wp-content/uploads/2020/07/truenas_open_storage-logo-full-color-rgb-1.svg" width="400" height="100" /&gt;
+
+* OS UNIX distribution : Core (FreeBSB) &amp; Scale (Ubuntu).
+* Can only run full virtualization with _KVM_ but work well with _dockers containers_ (Scale).
+* No GUI. CLI and Web Interface for managing VMs.
+* Device/PCI passthrough (seems more basic).
+* Offer ZFS storage solution.
+
+---
+
+## _KVM_ and _LXC_
+
+### Linux Containers (_LXC_)
+
+* Can create and run multiple Linux operating systems (OS) simultaneously on a single Linux machine (LXC host).
+* Use the host kernel.
+* Availables OS depends of the host (so UNIX/LINUX).
+* Very efficient : light, multiples containers for one host, runtime cost negligible.
+
+### Kernel-Based Virtual Machine (_KVM_)
+
+* Virtualize it's own Kernel.
+* Can be any OS (Windows, mac ect ...)
+* Heavy on ressources
+* Less-Efficient
+
+_KVM_ vs _LXC_ : _LXC_ cannot be displayed as a real OS (no GUI), _KVM_ can be remotely accessed (very Noice)
+
+---
+
+## _LXC_ vs _docker_
+
+* Based on the host kernel
+* _docker_ can be used on windows or macs, _LXC_ can't
+* _Docker_ for hosting single applications, _LXC_ for hosting whole _OS_.
+* _docker_ can use versioning, sharing between different host ... ect ...
+
+#### So the idea is to use _LXC_ to create an isolated OS, and them run docker on it for each applications.
+
+---
+
+## One example of potential application
+
+.center[
+&lt;img src="imgs/deploy_ideas.svg" width="80%" /&gt;
+]
+
+---
+
+## Usefull apps (web)
+
+* Sharing files (nextcloud,Git-annex,ass).
+* Git server (Gitea).
+* Code deployment (Rundeck,Ansible,Jenkins).
+* Documents storages (paperless-ngx, papermerge).
+* Self-wiki (Tiddlywiki,Bookstack,Trilium) / code snippet (Trilium,snipbox,snippet-box) .
+* Remote access via web browser (Apache Guacamole).
+* Self-Hosted alternative to Trello (Planka).
+* Self-Hosted alternative to Toggles (super-productivity,traggo,Kimai,...).
+* [Awesome self-hosted applications](https://github.com/awesome-selfhosted/awesome-selfhosted).
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="./macros.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
